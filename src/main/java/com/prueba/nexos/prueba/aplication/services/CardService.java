@@ -3,7 +3,7 @@ package com.prueba.nexos.prueba.aplication.services;
 import com.prueba.nexos.prueba.domain.model.request.Card;
 import com.prueba.nexos.prueba.domain.model.response.CardResponse;
 import com.prueba.nexos.prueba.domain.usecase.card.CardUseCase;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.CardRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.CardRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

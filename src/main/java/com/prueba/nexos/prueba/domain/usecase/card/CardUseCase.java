@@ -2,7 +2,7 @@ package com.prueba.nexos.prueba.domain.usecase.card;
 
 import com.prueba.nexos.prueba.domain.model.request.Card;
 import com.prueba.nexos.prueba.domain.model.response.CardResponse;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.CardRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.CardRequest;
 
 import java.util.Optional;
 

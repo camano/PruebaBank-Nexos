@@ -1,4 +1,4 @@
-package com.prueba.nexos.prueba.infrastructure.point.models.request;
+package com.prueba.nexos.prueba.infrastructure.controller.models.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

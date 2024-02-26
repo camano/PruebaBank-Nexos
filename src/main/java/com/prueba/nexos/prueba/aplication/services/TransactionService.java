@@ -3,8 +3,8 @@ package com.prueba.nexos.prueba.aplication.services;
 import com.prueba.nexos.prueba.domain.domain.transaction.request.Transaction;
 import com.prueba.nexos.prueba.domain.domain.transaction.response.TransactionResponse;
 import com.prueba.nexos.prueba.domain.usecase.transactions.TransactionUseCase;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.TransactionPurchaseRequest;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.TransactionRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionPurchaseRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

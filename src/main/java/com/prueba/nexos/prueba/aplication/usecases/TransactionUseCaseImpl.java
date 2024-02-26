@@ -10,8 +10,8 @@ import com.prueba.nexos.prueba.domain.model.request.Card;
 import com.prueba.nexos.prueba.domain.usecase.transactions.TransactionUseCase;
 import com.prueba.nexos.prueba.infrastructure.helper.excepciones.Excepctiones;
 import com.prueba.nexos.prueba.infrastructure.helper.utils.Utilidades;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.TransactionPurchaseRequest;
-import com.prueba.nexos.prueba.infrastructure.point.models.request.TransactionRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionPurchaseRequest;
+import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
