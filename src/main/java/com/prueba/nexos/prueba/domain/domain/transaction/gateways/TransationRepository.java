@@ -1,7 +1,6 @@
 package com.prueba.nexos.prueba.domain.domain.transaction.gateways;
 
 import com.prueba.nexos.prueba.domain.domain.transaction.request.Transaction;
-import com.prueba.nexos.prueba.domain.domain.transaction.response.TransactionResponse;
 
 import java.util.Optional;
 

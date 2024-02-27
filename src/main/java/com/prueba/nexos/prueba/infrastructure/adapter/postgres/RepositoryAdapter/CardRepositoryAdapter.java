@@ -1,12 +1,11 @@
 package com.prueba.nexos.prueba.infrastructure.adapter.postgres.RepositoryAdapter;
 
-import com.prueba.nexos.prueba.domain.model.request.Card;
 import com.prueba.nexos.prueba.domain.domain.card.gateways.CardRepository;
+import com.prueba.nexos.prueba.domain.model.request.Card;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.entity.CardEntitity;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.mapper.RepositotyMapper;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.repository.CardEntityRepository;
 import com.prueba.nexos.prueba.infrastructure.helper.excepciones.Excepctiones;
-import com.prueba.nexos.prueba.infrastructure.helper.excepciones.GlobalExcepcion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
@@ -21,10 +20,11 @@ public class CardRepositoryAdapter implements CardRepository {
     private final CardEntityRepository cardEntityRepository;
 
     @Autowired
-    private RepositotyMapper repositotyMapper;
+    private final RepositotyMapper repositotyMapper;
 
-    public CardRepositoryAdapter(CardEntityRepository cardEntityRepository) {
+    public CardRepositoryAdapter(CardEntityRepository cardEntityRepository, RepositotyMapper repositotyMapper) {
         this.cardEntityRepository = cardEntityRepository;
+        this.repositotyMapper = repositotyMapper;
     }
 
     @Override
@@ -55,7 +55,6 @@ public class CardRepositoryAdapter implements CardRepository {
         }
 
     }
-
 
 
 }

@@ -3,7 +3,6 @@ package com.prueba.nexos.prueba.infrastructure.adapter.postgres.RepositoryAdapte
 
 import com.prueba.nexos.prueba.domain.domain.status.gateways.EstadosRepository;
 import com.prueba.nexos.prueba.domain.domain.status.request.Estado;
-import com.prueba.nexos.prueba.infrastructure.adapter.postgres.entity.EstadoEntity;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.mapper.RepositotyMapper;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.repository.EstadoEntityRepository;
 import com.prueba.nexos.prueba.infrastructure.helper.excepciones.Excepctiones;
@@ -18,6 +17,12 @@ public class EstadosRepositoryAdapter implements EstadosRepository {
 
     @Autowired
     private RepositotyMapper repositotyMapper;
+
+    public EstadosRepositoryAdapter(EstadoEntityRepository estadoEntityRepository, RepositotyMapper repositotyMapper) {
+        this.estadoEntityRepository = estadoEntityRepository;
+        this.repositotyMapper = repositotyMapper;
+    }
+
     @Override
     public Estado estados(Long estadoId) {
         return estadoEntityRepository.findById(estadoId)

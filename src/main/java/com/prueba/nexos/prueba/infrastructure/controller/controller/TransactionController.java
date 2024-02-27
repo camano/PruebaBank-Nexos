@@ -2,7 +2,6 @@ package com.prueba.nexos.prueba.infrastructure.controller.controller;
 
 import com.prueba.nexos.prueba.aplication.services.TransactionService;
 import com.prueba.nexos.prueba.domain.domain.transaction.response.TransactionResponse;
-import com.prueba.nexos.prueba.domain.model.response.CardResponse;
 import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionPurchaseRequest;
 import com.prueba.nexos.prueba.infrastructure.controller.models.request.TransactionRequest;
 import io.swagger.v3.oas.annotations.Operation;

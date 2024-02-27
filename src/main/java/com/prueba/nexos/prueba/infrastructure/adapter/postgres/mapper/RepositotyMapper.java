@@ -16,6 +16,10 @@ public class RepositotyMapper {
     @Autowired
     private ModelMapper modelMapper;
 
+    public RepositotyMapper(ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
+    }
+
 
     public Transaction mapEntityTransaction(TransactionEntity transactionEntity){
         transactionEntity.setEstadoId(transactionEntity.getEstadoId());

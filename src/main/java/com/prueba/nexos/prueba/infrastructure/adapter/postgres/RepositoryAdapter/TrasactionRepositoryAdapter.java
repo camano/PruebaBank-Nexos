@@ -2,12 +2,10 @@ package com.prueba.nexos.prueba.infrastructure.adapter.postgres.RepositoryAdapte
 
 import com.prueba.nexos.prueba.domain.domain.transaction.gateways.TransationRepository;
 import com.prueba.nexos.prueba.domain.domain.transaction.request.Transaction;
-import com.prueba.nexos.prueba.domain.domain.transaction.response.TransactionResponse;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.entity.TransactionEntity;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.mapper.RepositotyMapper;
 import com.prueba.nexos.prueba.infrastructure.adapter.postgres.repository.TransactionEntityRepository;
 import com.prueba.nexos.prueba.infrastructure.helper.excepciones.Excepctiones;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
