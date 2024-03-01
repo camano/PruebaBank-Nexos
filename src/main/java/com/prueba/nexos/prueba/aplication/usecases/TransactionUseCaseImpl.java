@@ -76,7 +76,7 @@ public class TransactionUseCaseImpl implements TransactionUseCase {
 
         if (fechaCreacion.isBefore(fechaCardVencimiento)) {
             if (cardTransaction.getBalance() > 0) {
-                if (cardTransaction.getEstado().getEstadoId()!=5 ) {
+                if (cardTransaction.getEstado().getEstadoId()==4 ) {
                     if(transaction.getPrice() <= cardTransaction.getBalance()){
                         Double descontar= cardTransaction.getBalance() - transaction.getPrice();
                         cardTransaction.setBalance(descontar);

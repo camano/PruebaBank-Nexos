@@ -79,7 +79,7 @@ public class CardUseCaseImpl implements CardUseCase {
     public Optional<CardResponse> rechangeBalance(CardRequest card) {
         Card cardRechange = cardRepository.findByCardId(card.getCardId());
         cardRechange.setBalance(cardRechange.getBalance() + card.getBalance());
-        if(cardRechange.getEstado().getEstadoId()!=6){
+        if(cardRechange.getEstado().getEstadoId()==4){
             return cardRepository.activeCardOrBlockOrBalance(cardRechange)
                     .map(card1 -> CardResponse.builder()
                             .mensaje("Se recargo el saldo a " + cardRechange.getBalance())
